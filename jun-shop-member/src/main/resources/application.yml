@@ -1,0 +1,33 @@
+server:
+  port: 18080
+#  context-path: /member
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://39.106.35.109:8761/eureka/
+spring:
+  application:
+    name: shop-member
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jun-shop-member
+    username: root
+    password: 150306
+  activemq:
+    broker-url: tcp://39.106.35.109:61616
+    username: admin
+    password: admin
+    in-memory: true
+  redis:
+    host: 39.106.35.109
+    port: 6379
+    password: 123456
+
+
+
+mybatis:
+  type-aliases-package: com.jun.domain
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+queue: message
+

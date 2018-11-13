@@ -1,0 +1,21 @@
+项目结构设计
+
+父工程
+    api:存放项目对外开发的接口
+        member-api:会员模块用到的api
+    commons:存放项目用到的工具类及其共用的代码
+        aspect:用于一些需要加入代理的类进行统一的设置
+        base:基础类库
+        constants:常量类
+        Utils:工具类
+        Enum:项目通用的枚举类
+        Exection:项目自定义的异常类库
+    member:会员模块
+        controller:对外接口实现
+        dao:数据访问层
+        service:业务逻辑
+        mq:消息发送组件
+    message：消息发送模块
+        adapter：统一消息发送适配器
+        connsumer：消息发送具体实现
+        mail:邮件发送

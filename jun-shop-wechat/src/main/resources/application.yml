@@ -1,0 +1,11 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: shop-wechat
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://39.106.35.109:8761/eureka/

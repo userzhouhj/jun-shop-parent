@@ -1,0 +1,10 @@
+server:
+  port: 18088
+eureka:
+  client:
+    service-url:
+      defaultZone: http://39.106.35.109:8761/eureka/
+spring:
+  application:
+    name: shop-pc-web
+

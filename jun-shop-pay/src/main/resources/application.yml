@@ -1,0 +1,22 @@
+server:
+  port: 18082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://39.106.35.109:8761/eureka/
+spring:
+  application:
+    name: shop-payService
+  redis:
+    host: 39.106.35.109
+    port: 6379
+    password: 123456
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jun-shop-pay
+    username: root
+    password: 150306
+
+mybatis:
+  type-aliases-package: com.jun.domain
+
